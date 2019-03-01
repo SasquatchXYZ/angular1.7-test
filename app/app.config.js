@@ -6,11 +6,12 @@ angular
     function config($routeProvider) {
       $routeProvider
         .when('/table', {
-          template: '<table-view></table-view>'
+          template: '<table-view></table-view>',
         })
         .when('/cards', {
-          template: '<cards-view></cards-view>'
+          template: '<cards-view></cards-view>',
         })
         .otherwise('/table');
+
     }
   ]);

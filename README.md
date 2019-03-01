@@ -59,3 +59,7 @@ http-server -a localhost -p 8000
 
 Alternatively, you can choose to configure your own web server, such as Apache or Nginx. Just
 configure your server to serve the files under the `app/` directory.
+
+## Authors
+
+* **Dalton Ricker** - *Primary Author* - [SasquatchXYZ](https://github.com/SasquatchXYZ)

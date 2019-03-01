@@ -26,20 +26,19 @@
   <script src="lib/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-<div class="container mt-2">
-  <ul class="list-group list-group-horizontal">
-    <li class="list-group-item"><a href="#!/table">Table</a></li>
-    <li class="list-group-item"><a href="#!/cards">Cards</a></li>
-  </ul>
-
-  <!--[if lt IE 7]>
-  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
-  <![endif]-->
-
-  <div ng-view></div>
-
+<div class="container my-3">
+    <ul class="list-group list-group-horizontal">
+      <li class="list-group-item"><a href="#!/table">Table</a></li>
+      <li class="list-group-item"><a href="#!/cards">Cards</a></li>
+    </ul>
 </div>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div ng-view></div>
+
 
 <!-- In production use:
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>

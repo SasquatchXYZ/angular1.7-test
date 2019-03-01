@@ -1,24 +1,26 @@
-<div class="row mt-4">
-  <div class="col-md-12">
-    <div class="card-columns">
-      <div class="card my-3" ng-repeat="contact in $ctrl.addressbook">
-        <div class="card-header text-center">
-          {{contact.CompanyName[0]._text}} - {{contact.CustomerID[0]._text}}
+<div class="container">
+  <div class="row mt-4">
+    <div class="col-md-12">
+      <div class="card-columns">
+        <div class="card my-3" ng-repeat="contact in $ctrl.addressbook">
+          <div class="card-header text-center">
+            {{contact.CompanyName[0]._text}} - {{contact.CustomerID[0]._text}}
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{contact.ContactName[0]._text}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{contact.ContactTitle[0]._text}}</h6>
+            <p class="card-text">
+              {{contact.Address[0]._text}}
+              <br/>
+              {{contact.City[0]._text}}, {{contact.Country[0]._text}} {{contact.PostalCode[0]._text}}
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Email: {{contact.Email[0]._text}}</li>
+            <li class="list-group-item">Phone: {{contact.Phone[0]._text}}</li>
+            <li class="list-group-item">Fax: {{((!contact.Fax) ? 'None' : contact.Fax[0]._text)}}</li>
+          </ul>
         </div>
-        <div class="card-body">
-          <h5 class="card-title">{{contact.ContactName[0]._text}}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">{{contact.ContactTitle[0]._text}}</h6>
-          <p class="card-text">
-            {{contact.Address[0]._text}}
-            <br/>
-            {{contact.City[0]._text}}, {{contact.Country[0]._text}} {{contact.PostalCode[0]._text}}
-          </p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Email: {{contact.Email[0]._text}}</li>
-          <li class="list-group-item">Phone: {{contact.Phone[0]._text}}</li>
-          <li class="list-group-item">Fax: {{((!contact.Fax) ? 'None' : contact.Fax[0]._text)}}</li>
-        </ul>
       </div>
     </div>
   </div>

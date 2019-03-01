@@ -7,10 +7,3 @@ angular.module('testApp', [
   'cardsView',
   'testApp.version'
 ]);
-/*
-.config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
-
-  $routeProvider.otherwise({redirectTo: '/table-view'});
-}]);
-*/

@@ -12,7 +12,6 @@ angular
           const xmlDoc = xmlToJSON.parseString(res.data);
 
           self.addressbook = xmlDoc.AddressBook[0].Contact;
-          console.log(self.addressbook);
         });
     }]
   });

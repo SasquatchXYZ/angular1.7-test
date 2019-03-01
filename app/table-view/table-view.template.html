@@ -1,15 +1,16 @@
 <div class="row">
   <div class="col-md-12">
     <table class="table">
-      <thead>
-      <tr ng-repeat="contact in $ctrl.addressbook">
-        <th scope="col">{{contact.CompanyName[0]._text}}</th>
+      <thead ng-repeat="contact in $ctrl.addressbook">
+      <tr ng-repeat="key in contact">
+        <th scope="col">{{key}}</th>
+        <!--<th scope="col">{{contact.CompanyName[0]._text}}</th>-->
 
       </tr>
       </thead>
       <tbody>
-      <tr>
-        <th scope="row"></th>
+      <tr ng-repeat="contact in $ctrl.addressbook">
+        <td></td>
       </tr>
       </tbody>
     </table>
